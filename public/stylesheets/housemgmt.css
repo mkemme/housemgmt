@@ -1,0 +1,38 @@
+/* http://kuler.adobe.com/#themeID/2063204 */
+
+body { 
+  font-size: 20px; 
+  text-align: center; 
+  line-height: normal;
+  background-color: #314A63;
+}
+
+p {
+  text-align: center; 
+}
+
+.measurement {
+  font-family: 'Baumans', serif; 
+  font-size: 100px; 
+  text-shadow: 1px 1px 1px #000;
+  color: #B03137;
+  position: relative;
+  left: 50%;
+  margin-left: -120px;
+}
+.value {
+  position: relative;
+    left: 0px;
+    top: 50px;  
+}
+
+.circleBase {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+    width: 250px;
+    height: 250px;
+    background-color: #F5BF24;
+    border: 22px solid white;
+}
