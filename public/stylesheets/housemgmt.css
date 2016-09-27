@@ -1,38 +1,45 @@
 /* http://kuler.adobe.com/#themeID/2063204 */
 
 body { 
-  font-size: 20px; 
   text-align: center; 
   line-height: normal;
   background-color: #314A63;
-}
-
-p {
-  text-align: center; 
-}
-
-.measurement {
   font-family: 'Baumans', serif; 
+}
+.measurement {
   font-size: 100px; 
-  text-shadow: 1px 1px 1px #000;
   color: #B03137;
   position: relative;
   left: 50%;
   margin-left: -120px;
 }
 .value {
+  text-shadow: 1px 1px 1px #000;
   position: relative;
-    left: 0px;
-    top: 50px;  
+  vertical-align: top;
+  top: 65px;
 }
-
+.smallValue {
+  position: relative;
+  vertical-align: top;
+  top: 5px;
+  color: black;
+  font-size: 0.4em; 
+}
 .circleBase {
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
-    behavior: url(PIE.htc);
-    width: 250px;
-    height: 250px;
-    background-color: #F5BF24;
-    border: 22px solid white;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+  behavior: url(PIE.htc);
+  width: 250px;
+  height: 250px;
+  background-color: #F5BF24;
+  border: 10px solid white;
+}
+.smallCircle {
+    margin-left: 0px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
 }

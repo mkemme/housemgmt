@@ -2,10 +2,13 @@ extends layout
 
 block content
   div(class="measurement circleBase")
-    span(class="value", id="temperature")
-      | 0
+    span(class="value", id="actualTemperature")
+      | 12
 
-  div(class="measurement circleBase")
-    span(class="value", id="light")
-      | H
-    
+    div(class="circleBase smallCircle" style="left: -20px; top: 190px;")
+      span(class="smallValue", id="lowTemperature")
+        | 9
+
+    div(class="circleBase smallCircle" style="left: 220px; top: 20px;")
+      span(class="smallValue", id="highTemperature")
+        | 15
