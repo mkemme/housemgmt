@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "express": "3.0.0rc4",
-    "jade": "*"
+    "pug": "*",
+    "sqlite3": "*"
   },
   "devDependencies": {
     "node-dev": "~0.2.8"

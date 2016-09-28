@@ -2,7 +2,7 @@ function loadData() {
   // Get actual statistics
   $("#ajax-loader").show();
   var xhr = $.ajax({ 
-    url: "/measurements.json", 
+    url: "/temperature.json", 
     async: true,
     error: function(jqXHR, textStatus, errorThrown) { 
       // alert("ajax error");
