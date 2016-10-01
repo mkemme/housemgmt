@@ -12,7 +12,7 @@ module.exports = function(req, res){
         if (err) { 
           reject( { error: err } );
         } else {
-          resolve({ lowTemperature: row.minimum, highTemperature: row.maximum });
+          resolve({ lowTemperature: Math.round(row.minimum), highTemperature: Math.round(row.maximum) });
         };
       }
     );
@@ -24,7 +24,7 @@ module.exports = function(req, res){
         if (err) { 
           reject( { error: err } );
         } else {
-          resolve({ actualTemperature : row.temperature }); 
+          resolve({ actualTemperature : Math.round(row.temperature) }); 
         }
       }
     );
@@ -34,6 +34,7 @@ module.exports = function(req, res){
     p2.then(function (m2) {
       measurement = m1;
       measurement.actualTemperature = m2.actualTemperature;
+      measurement.updatedAt = new Date();
       db.close();
       res.send(measurement);
     })
